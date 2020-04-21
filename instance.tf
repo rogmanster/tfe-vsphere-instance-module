@@ -6,12 +6,12 @@ module "vm-PMR" {
   source  = "ptfe.this-demo.rocks/rchao-demo/vm-PMR/vsphere"
   version = "1.0.2"
   
-  vmtemp            = "win2012-new"
+  vmtemp            = "WinServerDev"
   is_windows_image  = "true"
   instances         = 1
   cpu_number        = 2
   ram_size          = 1024
-  vmname            = "rchao-example-server-windows"
+  vmname            = "example-server-windows"
   vmrp              = "MainCluster/Resources"
   thin_provisioned  = ["true"]
   network_cards     = ["VM Network"]
