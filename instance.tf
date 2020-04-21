@@ -7,14 +7,14 @@ module "vm-PMR" {
   instances         = 1
   cpu_number        = 2
   ram_size          = 1024
-  vmname            = "example-server-windows"
-  vmrp              = "esxi/Resources"
+  vmname            = "rchao-example-server-windows"
+  vmrp              = "MainCluster/Resources"
   thin_provisioned  = ["true"]
-  network_cards     = ["Name of the Port Group in vSphere"]
+  network_cards     = ["VM Network"]
   ipv4 = {
     "Name of the Port Group in vSphere" = [] # To use DHCP create Empty list for each instance
   }
-  dc        = "Datacenter"
-  datastore = "Data Store name(use ds_cluster for datastore cluster)"
+  dc        = "PacketDatacenter"
+  datastore = "Datastore"
 
 }
