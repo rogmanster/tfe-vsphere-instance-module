@@ -16,7 +16,7 @@ module "vm-PMR" {
   thin_provisioned  = ["true"]
   network_cards     = ["VM Network"]
   ipv4 = {
-    "Name of the Port Group in vSphere" = [] # To use DHCP create Empty list for each instance
+    "VM Network" = [] # To use DHCP create Empty list for each instance
   }
   dc        = "PacketDatacenter"
   datastore = "Datastore"
