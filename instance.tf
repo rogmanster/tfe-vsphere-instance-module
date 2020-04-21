@@ -19,6 +19,6 @@ module "vm-PMR" {
     "VM Network" = [""] # To use DHCP create Empty list for each instance
   }
   dc        = "PacketDatacenter"
-  datastore = "Datastore"
+  datastore = "datastore1"
 
 }
