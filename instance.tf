@@ -10,7 +10,7 @@ module "vm-PMR" {
   is_windows_image  = "true"
   instances         = 1
   cpu_number        = 2
-  ram_size          = 1024
+  ram_size          = 2048
   vmname            = "example-server-windows"
   vmrp              = "MainCluster/Resources"
   thin_provisioned  = ["true"]
