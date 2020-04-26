@@ -5,7 +5,10 @@ provider "vsphere" {
 module "vm-PMR" {
   source  = "ptfe.this-demo.rocks/rchao-demo/vm-PMR/vsphere"
   version = "1.0.2"
-  
+
+  windomain = "example.com"
+  domainuser = "Administrator"
+  domainpass = "3T60ingHm"
   vmtemp            = "WinServerDev"
   is_windows_image  = "true"
   instances         = 1
