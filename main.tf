@@ -8,13 +8,13 @@ module "vm-PMR" {
 
   vmtemp                = "WinServerDev"
   is_windows_image      = "true"
-  windomain             = "example.com"
-  domain_admin_user     = "Administrator"
-  domain_admin_password = "3T60ingHm"
+  #windomain             = "example.com"
+  #domain_admin_user     = "Administrator"
+  #domain_admin_password = "3T60ingHm"
   instances         = 1
   cpu_number        = 2
   ram_size          = 2048
-  vmname            = "example-server-windows"
+  vmname            = "rchao-win-server"
   vmrp              = "MainCluster/Resources"
   thin_provisioned  = ["true"]
   network_cards     = ["VM Network"]
