@@ -7,8 +7,9 @@ module "vm-PMR" {
   version = "1.0.2"
 
   windomain = "example.com"
-  domainuser = "Administrator"
-  domainpass = "3T60ingHm"
+  local_adminpass = "Hashi123!"
+  domain_admin_user = "Administrator"
+  domain_admin_pass = "3T60ingHm"
   vmtemp            = "WinServerDev"
   is_windows_image  = "true"
   instances         = 1
