@@ -6,12 +6,11 @@ module "vm-PMR" {
   source  = "ptfe.this-demo.rocks/rchao-demo/vm-PMR/vsphere"
   version = "1.0.2"
 
-  windomain = "example.com"
-  local_adminpass = "Hashi123!"
-  domain_admin_user = "Administrator"
-  domain_admin_pass = "3T60ingHm"
-  vmtemp            = "WinServerDev"
-  is_windows_image  = "true"
+  vmtemp                = "WinServerDev"
+  is_windows_image      = "true"
+  windomain             = "example.com"
+  domain_admin_user     = "Administrator"
+  domain_admin_password = "3T60ingHm"
   instances         = 1
   cpu_number        = 2
   ram_size          = 2048
