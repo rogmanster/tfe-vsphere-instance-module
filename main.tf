@@ -1,12 +1,8 @@
-variable "name" {
-  default = "rchao"
-}
-
 provider "vsphere" {
   allow_unverified_ssl = true
 }
 
-module "vm-PMR-${var.name}" {
+module "vm-PMR" {
   source  = "ptfe.this-demo.rocks/rchao-demo/vm-PMR/vsphere"
   version = "1.0.2"
 
