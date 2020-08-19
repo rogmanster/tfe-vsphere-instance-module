@@ -14,7 +14,7 @@ module "vm-PMR" {
   instances         = 1
   cpu_number        = 2
   ram_size          = 2048
-  vmname            = "rchao-win-server-1"
+  vmname            = "rchao-win-server-2"
   vmrp              = "MainCluster/Resources"
   thin_provisioned  = ["true"]
   network_cards     = ["VM Network"]
