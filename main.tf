@@ -10,7 +10,7 @@ module "vm-PMR" {
   is_windows_image      = "true"
   #windomain             = "example.com"
   #domain_admin_user     = "Administrator"
-  #domain_admin_password = "3T60ingHm"
+  #domain_admin_password = "xxxyyyzzz"
   instances         = 1
   cpu_number        = 2
   ram_size          = 2048
